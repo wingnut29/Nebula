@@ -1,13 +1,6 @@
 {
   "INTRO" : [
-    "Welcome to Nebula, the 'out of this world' training guide.\n\n",
-    "This training will be comprised of information and questions from the Neets Modules. ",
-    "These modules can be found online at \"http://www.compatt.com/Tutorials/NEETS/NEETS.html\". ",
-    "This course will take you through study material and prompt you with questions. ",
-    "You will be scored on how many question you get correct. ",
-    "At the end you will get a final score; please take a screen shot and send it to CTR2 Mullins. ",
-    "There may be a prize for the highest scores...\n\n",
-    "Good luck and may the odds be ever in your favour!"
+    "Welcome to Nebula, the 'out of this world' training guide.\n\n"
   ],
 
   "SCORE" : 0,

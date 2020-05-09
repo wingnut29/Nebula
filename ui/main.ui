@@ -214,6 +214,57 @@ p, li { white-space: pre-wrap; }
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QToolButton" name="btnNext">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>710</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btnNext {         
+						
+						background-color: transparent;
+                        color: rgb(255, 255, 255);
+                        border: none;
+                        border-radius: 10px;
+                        }
+                        #btnNext:hover{
+                        
+	
+						
+	background-color: rgba(85, 170, 255, 55%);
+                        color: rgb(255, 255, 255);
+                        }
+                        #btnNext:pressed {
+                        background-color: transparent;
+                        color: rgb(255, 255, 255);
+                        }</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextBesideIcon</enum>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

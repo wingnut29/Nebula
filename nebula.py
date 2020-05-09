@@ -6,6 +6,7 @@ from PyQt5 import QtWidgets
 
 from src import main
 
+
 def get_os():
     """
     Check operating system, return string (e.g. 'linux' or 'win32')
@@ -31,6 +32,7 @@ def check_permissions():
         print("Permission Error (", error, ") exists. Try root?")
     finally:
         return path, error if error else None  # Return directory path and error if one exists
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

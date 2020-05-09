@@ -29,6 +29,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.txtInput.setText(intro_string)
 
         self.btnStart.clicked.connect(self.start_training)
+        # self.btnNext.clicked.connect( )
 
     def setup_ui(self):
         width = GetSystemMetrics(0)
@@ -36,6 +37,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.imgBackground.setPixmap(QPixmap(resources.BACKGROUND))
         self.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
         self.btnStart.setIcon(QtGui.QIcon(resources.BTN_START))
+        self.btnNext.setEnabled(False)
+        self.btnNext.setVisible(False)
+        self.btnNext.setIcon(QtGui.QIcon(resources.RIGHT_ARROW))
 
     def start_timers(self):
         clock = QTimer(self)
@@ -57,9 +61,12 @@ class MainWindow(QtWidgets.QMainWindow):
         self.lcdTime.display(time)
 
     def load_json(self):
-        with open(resources.DATA, 'rt') as f_in:
-            data = json.load(f_in)
-        return data
+        try:
+            with open(resources.DATA, 'rt') as f_in:
+                data = json.load(f_in)
+            return data
+        except Exception as e:
+            QMessageBox.warning(self, "Error", "Cannot load backend. {}".format(e))
 
     def start_training(self):
         self.btnStart.setVisible(False)
@@ -75,7 +82,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def rocket_timer(self):
         clock = QTimer(self)
         clock.timeout.connect(self.move_rocket)
-        clock.start(80)
+        clock.start(85)
 
         self.move_rocket()
 
@@ -86,12 +93,15 @@ class MainWindow(QtWidgets.QMainWindow):
             self.lcdTime.setVisible(True)
             self.lblTitle.setVisible(True)
             self.frame_menu.setVisible(True)
-
+            self.btnNext.setEnabled(True)
+            self.btnNext.setVisible(True)
             self.txtInput.setText("Blast off!")
+
         else:
             self.lblShip.move((self.lblShip.x() + 15), (self.lblShip.y() - 10))
 
-
+    def next(self):
+        pass
 
 
 

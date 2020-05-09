@@ -5,7 +5,7 @@ setup(
     version='0.0.1',
     packages=find_packages(),
     url='',
-    license='',
+    license='GNU GENERAL PUBLIC LICENSE',
     author='Justin',
     author_email='',
     description='Training Study Aid',
