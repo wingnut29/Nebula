@@ -1,11 +1,36 @@
 {
-  "INTRO" : [
-    "Welcome to Nebula, the 'out of this world' training guide.\n\n"
-  ],
-
-  "SCORE" : 0,
-
-  "QUESTIONS" : [],
-
-  "STUDY" : []
+    "COUNTER": 0,
+    "INTRO": [
+        "Welcome to Nebula, the 'out of this world' training guide.\n\n",
+        "This training will be comprised of information and questions from the Neets Modules. ",
+        "These modules can be found online at \"http://www.compatt.com/Tutorials/NEETS/NEETS.html\". ",
+        "Good luck and may the odds be ever in your favour!"
+    ],
+    "QUESTIONS": [
+        {
+            "What is PROPAGATION?": [
+                "movement through a medium",
+                "length of a wave",
+                "the rate at which a wave travels",
+                "speed at which a wave moves"
+            ]
+        },
+        {
+            "Sometimes called COMPRESSION WAVES": [
+                "Transverse waves",
+                "Longitudinal waves",
+                "Space waves",
+                "Pressure waves"
+            ]
+        }
+    ],
+    "Q_ANSWERS": [
+        "movement through a medium",
+        "Longitudinal waves"
+    ],
+    "SCORE": 0,
+    "STUDY": [
+        "This is an example of study material. Using this example to showcase.",
+        "study box number 2"
+    ]
 }

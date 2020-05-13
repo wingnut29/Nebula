@@ -4,7 +4,8 @@ from pathlib import Path
 
 from PyQt5 import QtWidgets
 
-from src import main
+from src import splash
+from src import functions
 
 
 def get_os():
@@ -36,5 +37,6 @@ def check_permissions():
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    window = main.MainWindow()
+    window = splash.MainWindow()
     app.exec_()
+    functions.reset_json()
