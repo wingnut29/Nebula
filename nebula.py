@@ -34,7 +34,6 @@ def check_permissions():
     finally:
         return path, error if error else None  # Return directory path and error if one exists
 
-
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     window = splash.MainWindow()

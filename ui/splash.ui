@@ -368,6 +368,35 @@ background: transparent;</string>
  Communication Principles</string>
     </property>
    </widget>
+   <widget class="QLabel" name="lblSubHeader">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>130</y>
+      <width>471</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>WHO WANTS TO BE A MILLIONARE A.I.R. VERSION</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>imgBackground</zorder>
    <zorder>lcdTime</zorder>
    <zorder>lblTitle</zorder>
@@ -378,6 +407,7 @@ background: transparent;</string>
    <zorder>btnRadar</zorder>
    <zorder>btnMod</zorder>
    <zorder>btnRF</zorder>
+   <zorder>lblSubHeader</zorder>
   </widget>
  </widget>
  <resources/>

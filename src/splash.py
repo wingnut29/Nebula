@@ -48,6 +48,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.lcdTime.display(time)
 
     def select_topic(self):
+        self.lblSubHeader.setVisible(False)
         self.btnStart.setVisible(False)
         self.btnStart.setEnabled(False)
         self.btnRF.setVisible(True)
@@ -56,6 +57,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.btnWave.setVisible(True)
         self.btnWave.setEnabled(True)
         self.btnWave.clicked.connect(lambda: self.switch_window(main, "Wave Propagation"))
+        # self.btnRadar.clicked.connect(lambda: self.switch_window(main, "Radar Principles"))
+        # self.btnMod.clicked.connect(lambda: self.switch_window(main, "Modulation"))
+        # self.btnRF.clicked.connect(lambda: self.switch_window(main, "Radio-Frequency Communication Principles"))
 
     def switch_window(self, ui, topic= None):
         self.window = ui.MainWindow(topic)

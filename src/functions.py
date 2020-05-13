@@ -12,6 +12,7 @@ def reset_json():
             data = json.load(f_in)
 
             data["COUNTER"] = 0
+            data["SCORE"] = 0
 
         with open(resources.DATA, 'w') as json_file:
             json.dump(data, json_file, indent=4, sort_keys=True)
