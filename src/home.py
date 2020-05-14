@@ -13,7 +13,7 @@ from src import resources
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, topic=None):
         super(MainWindow, self).__init__()
-        uic.loadUi(resources.MAIN_WINDOW, self)
+        uic.loadUi(resources.HOME, self)
         self.window = None
         self.start_timers()
         self.setup_ui(topic)

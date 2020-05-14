@@ -3,9 +3,6 @@ from setuptools import setup, find_packages
 with open("../README.md") as readme:
     long_description = readme.read()
 
-with open("../requirements.txt") as requirements:
-    install_requires = [line.strip() for line in requirements]
-
 setup(
     name='Nebula',
     version='1.0.0',
@@ -15,6 +12,5 @@ setup(
     author='Justin Mullins',
     author_email='',
     description='',
-    long_description=long_description,
-    install_requires=install_requires
+    long_description=long_description, install_requires=['PyQt5']
 )

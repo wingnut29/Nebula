@@ -9,7 +9,7 @@ from src import home, resources
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
-        uic.loadUi(resources.SPLASH, self)
+        uic.loadUi(resources.MAIN, self)
         self.window = None
         self.start_timers()
         self.setup_ui()

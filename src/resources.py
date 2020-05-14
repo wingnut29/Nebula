@@ -1,10 +1,10 @@
 # Ui Files
-MAIN_WINDOW = "resources/ui/main.ui"
-SPLASH = "resources/ui/splash.ui"
+HOME = "resources/ui/home.ui"
+MAIN = "resources/ui/main.ui"
 
 # Image Files
 BACKGROUND = "resources/imgs/space_nebula.jpg"
-WINDOW_ICON = "resources/imgs/resources.png"
+WINDOW_ICON = "resources/imgs/nebula.png"
 BTN_START = "resources/imgs/rocket.png"
 RIGHT_ARROW = "resources/imgs/right_arrow.png"
 LEFT_ARROW = "resources/imgs/left_arrow.png"
