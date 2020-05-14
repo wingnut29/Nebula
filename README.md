@@ -2,6 +2,8 @@
 
 Interactive training environment, inspired by Who Wants to be a Millionaire, designed to bring training material to the 'work from home' environment.
 
+![Alt text](/resources/imgs/screenshot.png)  
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
