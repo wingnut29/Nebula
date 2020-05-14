@@ -6,7 +6,7 @@ Interactive training environment, inspired by Who Wants to be a Millionaire, des
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Nebula.
 
 ```bash
 pip install nebula
