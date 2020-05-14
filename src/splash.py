@@ -12,6 +12,7 @@ from src import resources
 from src import main
 from src import functions
 
+
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()

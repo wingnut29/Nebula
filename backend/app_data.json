@@ -7,6 +7,7 @@
         "Good luck and may the odds be ever in your favour!"
     ],
     "MONEY": [
+        "$0",
         "$100",
         "$200",
         "$300",
@@ -40,15 +41,32 @@
                 "Space waves",
                 "Pressure waves"
             ]
+        },
+        {
+            "3-30 GHz": [
+                "Super High Frequency",
+                "Very High Frequency",
+                "High Frequency",
+                "Extremely High Frequency"
+            ]
+        },
+        {
+            "What is the bending of the waves as they move from one medium into another": [
+                "Reflection",
+                "Diffraction",
+                "Refraction",
+                "Absorption"
+            ]
         }
     ],
     "Q_ANSWERS": [
         "movement through a medium",
-        "Longitudinal waves"
+        "Longitudinal waves",
+        "Super High Frequency",
+        "Refraction"
     ],
     "SCORE": 0,
     "STUDY": [
-        "This is an example of study material. Using this example to showcase.",
-        "study box number 2"
+        "Material"
     ]
 }

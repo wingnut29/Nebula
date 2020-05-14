@@ -152,14 +152,20 @@ class MainWindow(QtWidgets.QMainWindow):
                 msgBox.setIcon(QMessageBox.Information)
                 msgBox.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
                 msgBox.setWindowTitle("END")
-                msgBox.setText("You finished and answered all question correctly!\n"
-                                              "You won ONE MILLION DOLLARS! (if only it were real)\n"
-                                              "Would you like to play again?")
+                msgBox.setText("You finished and answered all question correctly!\n" +
+                               "You won {} DOLLARS! (if only it were real)\n".format(data["MONEY"][data["SCORE"]]) +
+                               "Would you like to play again?")
                 answer_input = msgBox.exec_()
 
             if answer_input == QMessageBox.Yes:
                 self.switch_window(splash)
             elif answer_input == QMessageBox.No:
+                msgBox = QMessageBox()
+                msgBox.setIcon(QMessageBox.Information)
+                msgBox.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
+                msgBox.setWindowTitle("Exit")
+                msgBox.setText("Thank you for playing!")
+                msgBox.exec_()
                 self.close()
 
     def check_answer(self, data, button):
@@ -182,6 +188,9 @@ class MainWindow(QtWidgets.QMainWindow):
             self.next_question(data)
 
         elif button.text() != data["Q_ANSWERS"][count]:
+            money_label.setStyleSheet("QLabel{background-color: rgb(255, 0, 0);"
+                                      "border-radius:10px;"
+                                      "border: 2px solid #000000;}")
             if count == 0:
                 msgBox.setWindowTitle("Incorrect")
                 msgBox.setText("Sorry that is incorrect.\n"
@@ -190,7 +199,7 @@ class MainWindow(QtWidgets.QMainWindow):
             else:
                 msgBox.setWindowTitle("Incorrect")
                 msgBox.setText("Sorry that is incorrect.\n"
-                               "You made it to {}".format(data["MONEY"][count - 1]))
+                               "You made it to {}".format(data["MONEY"][count]))
                 msgBox.exec_()
             self.switch_window(splash)
 
