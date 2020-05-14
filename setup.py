@@ -1,13 +1,20 @@
 from setuptools import setup, find_packages
 
+with open("../README.md") as readme:
+    long_description = readme.read()
+
+with open("../requirements.txt") as requirements:
+    install_requires = [line.strip() for line in requirements]
+
 setup(
     name='Nebula',
-    version='0.0.1',
+    version='1.0.0',
     packages=find_packages(),
-    url='',
-    license='GNU GENERAL PUBLIC LICENSE',
-    author='Justin',
+    url='https://github.com/wingnut29/Nebula',
+    license='MIT',
+    author='Justin Mullins',
     author_email='',
-    description='Training Study Aid',
-
+    description='',
+    long_description=long_description,
+    install_requires=install_requires
 )

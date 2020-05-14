@@ -1,7 +1,25 @@
-# NEBULA  
-  
-**Requirements:** _Python3, PyQt5_  
-**To Use:** _python3 orion.py_  
-  
-**Attributes:**  _<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> 
-from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>_
+# Nebula
+
+Interactive training environment, inspired by Who Wants to be a Millionaire, designed to bring training material to the 'work from home' environment.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install nebula
+```
+
+## Usage
+
+```bash
+python nebula.py
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/) © 2020 Justin Mullins
