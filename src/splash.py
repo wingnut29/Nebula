@@ -1,16 +1,11 @@
-import json
-import os
-
+from PyQt5 import QtWidgets, QtGui, uic
 from PyQt5.QtCore import QTime, QTimer
+from PyQt5.QtGui import QPixmap
 from win32api import GetSystemMetrics
 
-from PyQt5 import QtWidgets, QtGui, uic
-from PyQt5.QtGui import QPixmap
-
-
-from src import resources
-from src import main
 from src import functions
+from src import main
+from src import resources
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -62,7 +57,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # self.btnMod.clicked.connect(lambda: self.switch_window(main, "Modulation"))
         # self.btnRF.clicked.connect(lambda: self.switch_window(main, "Radio-Frequency Communication Principles"))
 
-    def switch_window(self, ui, topic= None):
+    def switch_window(self, ui, topic=None):
         self.window = ui.MainWindow(topic)
         self.window.show()
         self.close()

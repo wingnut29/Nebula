@@ -347,8 +347,7 @@ background: transparent;</string>
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {         
-						
+     <string notr="true">QPushButton {			
 						background-color: rgba(45, 91, 136, 65%);
 						border-radius: 25px;
                         color: rgb(255, 255, 255);

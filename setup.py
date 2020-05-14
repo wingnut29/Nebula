@@ -11,4 +11,3 @@ setup(
     description='Training Study Aid',
 
 )
-

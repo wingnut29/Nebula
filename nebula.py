@@ -4,8 +4,8 @@ from pathlib import Path
 
 from PyQt5 import QtWidgets
 
-from src import splash
 from src import functions
+from src import splash
 
 
 def get_os():
@@ -33,6 +33,7 @@ def check_permissions():
         print("Permission Error (", error, ") exists. Try root?")
     finally:
         return path, error if error else None  # Return directory path and error if one exists
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

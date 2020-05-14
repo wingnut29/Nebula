@@ -1,9 +1,6 @@
-
 import nebula
 
 PATH, ERRORS = nebula.check_permissions()
-
-
 
 # Ui Files
 MAIN_WINDOW = "{}{}".format(PATH, "/ui/main.ui")

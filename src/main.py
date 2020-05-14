@@ -1,16 +1,14 @@
 import json
-import sys
-
-from PyQt5.QtCore import QTime, QTimer
-from win32api import GetSystemMetrics
 
 from PyQt5 import QtWidgets, QtGui, uic
+from PyQt5.QtCore import QTime, QTimer
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QMessageBox, QApplication
+from PyQt5.QtWidgets import QMessageBox
+from win32api import GetSystemMetrics
 
+from src import functions
 from src import resources
 from src import splash
-from src import functions
 
 
 class MainWindow(QtWidgets.QMainWindow):
