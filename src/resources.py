@@ -1,6 +1,7 @@
 # Ui Files
 HOME = "resources/ui/home.ui"
 MAIN = "resources/ui/main.ui"
+STUDY = "resources/ui/study.ui"
 
 # Image Files
 BACKGROUND = "resources/imgs/space_nebula.jpg"

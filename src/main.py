@@ -4,6 +4,7 @@ from PyQt5.QtGui import QPixmap
 
 from src import functions
 from src import home, resources
+from src import study
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -20,6 +21,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
         self.btnStart.clicked.connect(self.select_topic)
         self.btnInfo.clicked.connect(functions.feature_construction)
+        self.btnStudy.clicked.connect(lambda: self.switch_window(study))
         self.btnRF.setEnabled(False)
         self.btnMod.setEnabled(False)
         self.btnRadar.setEnabled(False)
@@ -50,9 +52,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.btnWave.setVisible(True)
         self.btnWave.setEnabled(True)
         self.btnWave.clicked.connect(lambda: self.switch_window(home, "Wave Propagation"))
-        # self.btnRadar.clicked.connect(lambda: self.switch_window(main, "Radar Principles"))
-        # self.btnMod.clicked.connect(lambda: self.switch_window(main, "Modulation"))
-        # self.btnRF.clicked.connect(lambda: self.switch_window(main, "Radio-Frequency Communication Principles"))
+        # self.btnRadar.clicked.connect(lambda: self.switch_window(home, "Radar Principles"))
+        # self.btnMod.clicked.connect(lambda: self.switch_window(home, "Modulation"))
+        # self.btnRF.clicked.connect(lambda: self.switch_window(home, "Radio-Frequency Communication Principles"))
 
     def switch_window(self, ui, topic=None):
         self.window = ui.MainWindow(topic)

@@ -57,13 +57,121 @@
         "Refraction",
         "Absorption"
       ]
+    },
+    {
+      "Virtually all weather phenomena take place in this region": [
+        "Stratosphere",
+        "Ionosphere",
+        "Troposphere",
+        "Mesosphere"
+      ]
+    },
+    {
+      "Is composed of three layers designated D, E, and F": [
+        "Stratosphere",
+        "Ionosphere",
+        "Troposphere",
+        "Mesosphere"
+      ]
+    },
+    {
+      "One-third farther than the natural horizon": [
+        "Radar horizon",
+        "Radio horizon",
+        "Virtual horizon",
+        "Natural horizon"
+      ]
+    },
+    {
+      "often called the ionospheric wave, is radiated in an upward direction and returned to Earth at some distant location because of refraction from the ionosphere.": [
+        "ground wave",
+        "surface wave",
+        "space wave",
+        "sky wave"
+      ]
+    },
+    {
+      "Known as the maximum frequency at which radio waves can be transmitted vertically and refracted back to Earth": [
+        "Critical frequency",
+        "Maximum frequency",
+        "Optimum Frequency",
+        "Terminal frequency"
+      ]
+    },
+    {
+      "Factor that can result in annoying or impossible operating conditions and radio communications.": [
+        "Operating interference",
+        "Communication interference",
+        "Communication fault",
+        "Electromagnetic interference"
+      ]
+    },
+    {
+      "This causes variations in the ionization density.": [
+        "tidal cycle",
+        "27-day sunspot cycle",
+        "full moon cycle",
+        "29-day sunspot cycle"
+      ]
+    },
+    {
+      "Highest around noon when ultraviolet light waves from the sun are the most intense.": [
+        "Maximum usable frequency",
+        "optimum frequency",
+        "lowest usable frequency",
+        "full frequency"
+      ]
+    },
+    {
+      "A wave whose frequency is too low is absorbed to such an extent that it is too weak for reception.": [
+        "Maximum usable frequency",
+        "optimum frequency",
+        "lowest usable frequency",
+        "full frequency"
+      ]
+    },
+    {
+      "The path that a refracted wave follows to the receiver depends on the ___ at which the wave strikes the ionosphere.": [
+        "time",
+        "velocity",
+        "frequency",
+        "angle"
+      ]
+    },
+    {
+      "The __ layers are responsible for high-frequency, long distance transmission.": [
+        "F",
+        "E",
+        "D",
+        "troposphere"
+      ]
+    },
+    {
+      "The factor that has the greatest adverse effect on radio waves is _______.": [
+        "weather",
+        "distance",
+        "absorption",
+        "temperature"
+      ]
     }
   ],
   "Q_ANSWERS": [
     "movement through a medium",
     "Longitudinal waves",
     "Super High Frequency",
-    "Refraction"
+    "Refraction",
+    "Troposphere",
+    "Ionosphere",
+    "Radio horizon",
+    "sky wave",
+    "Critical frequency",
+    "Electromagnetic interference",
+    "27-day sunspot cycle",
+    "Maximum usable frequency",
+    "lowest usable frequency",
+    "angle",
+    "F",
+    "absorption"
   ],
   "SCORE": 0,
   "STUDY": [

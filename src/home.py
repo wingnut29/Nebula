@@ -230,6 +230,8 @@ class MainWindow(QtWidgets.QMainWindow):
         elif count == 13:
             return self.lbl250T
         elif count == 14:
+            return self.lbl500T
+        elif count == 15:
             return self.lblMillion
 
     def switch_window(self, ui):
