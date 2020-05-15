@@ -1,0 +1,180 @@
+{
+  "COUNTER": 0,
+  "INTRO": [
+    "Welcome to Nebula, the 'out of this world' training guide.\n\n",
+    "This training will be comprised of information and questions from the Neets Modules. ",
+    "These modules can be found online at \"http://www.compatt.com/Tutorials/NEETS/NEETS.html\". ",
+    "Good luck and may the odds be ever in your favour!"
+  ],
+  "MONEY": [
+    "$0",
+    "$100",
+    "$200",
+    "$300",
+    "$400",
+    "$500",
+    "$1,000",
+    "$2,000",
+    "$4,000",
+    "$8,000",
+    "$16,000",
+    "$32,000",
+    "$64,000",
+    "$125,000",
+    "$250,000",
+    "$500,000",
+    "$1 Million"
+  ],
+  "QUESTIONS": [
+    {
+      "What is PROPAGATION?": [
+        "movement through a medium",
+        "length of a wave",
+        "the rate at which a wave travels",
+        "speed at which a wave moves"
+      ]
+    },
+    {
+      "Sometimes called COMPRESSION WAVES": [
+        "Transverse waves",
+        "Longitudinal waves",
+        "Space waves",
+        "Pressure waves"
+      ]
+    },
+    {
+      "3-30 GHz": [
+        "Super High Frequency",
+        "Very High Frequency",
+        "High Frequency",
+        "Extremely High Frequency"
+      ]
+    },
+    {
+      "What is the bending of the waves as they move from one medium into another": [
+        "Reflection",
+        "Diffraction",
+        "Refraction",
+        "Absorption"
+      ]
+    },
+    {
+      "Virtually all weather phenomena take place in this region": [
+        "Stratosphere",
+        "Ionosphere",
+        "Troposphere",
+        "Mesosphere"
+      ]
+    },
+    {
+      "Is composed of three layers designated D, E, and F": [
+        "Stratosphere",
+        "Ionosphere",
+        "Troposphere",
+        "Mesosphere"
+      ]
+    },
+    {
+      "One-third farther than the natural horizon": [
+        "Radar horizon",
+        "Radio horizon",
+        "Virtual horizon",
+        "Natural horizon"
+      ]
+    },
+    {
+      "often called the ionospheric wave, is radiated in an upward direction and returned to Earth at some distant location because of refraction from the ionosphere.": [
+        "ground wave",
+        "surface wave",
+        "space wave",
+        "sky wave"
+      ]
+    },
+    {
+      "Known as the maximum frequency at which radio waves can be transmitted vertically and refracted back to Earth": [
+        "Critical frequency",
+        "Maximum frequency",
+        "Optimum Frequency",
+        "Terminal frequency"
+      ]
+    },
+    {
+      "Factor that can result in annoying or impossible operating conditions and radio communications.": [
+        "Operating interference",
+        "Communication interference",
+        "Communication fault",
+        "Electromagnetic interference"
+      ]
+    },
+    {
+      "This causes variations in the ionization density.": [
+        "tidal cycle",
+        "27-day sunspot cycle",
+        "full moon cycle",
+        "29-day sunspot cycle"
+      ]
+    },
+    {
+      "Highest around noon when ultraviolet light waves from the sun are the most intense.": [
+        "Maximum usable frequency",
+        "optimum frequency",
+        "lowest usable frequency",
+        "full frequency"
+      ]
+    },
+    {
+      "A wave whose frequency is too low is absorbed to such an extent that it is too weak for reception.": [
+        "Maximum usable frequency",
+        "optimum frequency",
+        "lowest usable frequency",
+        "full frequency"
+      ]
+    },
+    {
+      "The path that a refracted wave follows to the receiver depends on the ___ at which the wave strikes the ionosphere.": [
+        "time",
+        "velocity",
+        "frequency",
+        "angle"
+      ]
+    },
+    {
+      "The __ layers are responsible for high-frequency, long distance transmission.": [
+        "F",
+        "E",
+        "D",
+        "troposphere"
+      ]
+    },
+    {
+      "The factor that has the greatest adverse effect on radio waves is _______.": [
+        "weather",
+        "distance",
+        "absorption",
+        "temperature"
+      ]
+    }
+  ],
+  "Q_ANSWERS": [
+    "movement through a medium",
+    "Longitudinal waves",
+    "Super High Frequency",
+    "Refraction",
+    "Troposphere",
+    "Ionosphere",
+    "Radio horizon",
+    "sky wave",
+    "Critical frequency",
+    "Electromagnetic interference",
+    "27-day sunspot cycle",
+    "Maximum usable frequency",
+    "lowest usable frequency",
+    "angle",
+    "F",
+    "absorption"
+  ],
+  "SCORE": 0,
+  "STUDY": [
+    "Material"
+  ]
+}
