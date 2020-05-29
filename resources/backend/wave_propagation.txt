@@ -1,0 +1,69 @@
+WAVE PROPAGATION
+
+A WAVE can be defined as a DISTURBANCE (sound, light, radio waves) that moves through a MEDIUM (air, water, vacuum).
+
+WAVE MOTION can be defined as a recurring disturbance advancing through space with or without the use of a physical medium.
+
+Wave motion, therefore, is a means of moving or transferring energy from one point to another point.
+
+Basic wave motion can be shown by dropping a stone into a pool of water. As the stone enters the water, a surface disturbance is created, resulting in an expanding series of circular waves.
+ 
+
+Elements of a Wave:
+ 
+Sound waves are LONGITUDINAL WAVES. Unlike transverse waves, which travel at right angles to the direction of propagation, sound waves travel back and forth in the same direction as the wave motion. Therefore, longitudinal waves are waves in which the disturbance takes place in the direction of propagation. Longitudinal waves are sometimes called COMPRESSION WAVES.
+
+A MEDIUM is the vehicle through which the wave travels from one point to the next. The vehicle that carries a wave can be just about anything. An example of a medium, already mentioned, is air.
+
+The number of vibrations, or cycles, of a wave train in a unit of time is called the FREQUENCY of the wave train and is measured in HERTZ.
+
+There are two basic fields associated with every antenna; an INDUCTION FIELD and a RADIATION FIELD.
+
+The PERIOD of a radio wave is simply the amount of time required for the completion of one full cycle
+ 
+
+Refraction - the bending of the waves as they move from one medium into another
+
+A radio wave that meets an obstacle has a natural tendency to bend around the obstacle. The bending, called diffraction, results in a change of direction of part of the wave energy from the normal line-of-sight path.
+
+The troposphere is the portion of the Earth's atmosphere that extends from the surface of the Earth to a height of about 3.7 miles (6 km) at the North Pole or the South Pole and 11.2 miles (18 km) at the equator. Virtually all weather phenomena take place in the troposphere. The temperature in this region decreases rapidly with altitude, clouds form, and there may be much turbulence because of variations in temperature, density, and pressure. These conditions have a great effect on the propagation of radio waves.
+
+The stratosphere is located between the troposphere and the ionosphere. The temperature throughout this region is considered to be almost constant and there is little water vapor present. The stratosphere has relatively little effect on radio waves because it is a relatively calm region with little or no temperature changes.
+
+The ionosphere extends upward from about 31.1 miles (50 km) to a height of about 250 miles (402 km). It contains four cloud-like layers of electrically charged ions, which enable radio waves to be propagated to great distances around the Earth. This is the most important region of the atmosphere for long distance point-to-point communications.
+
+The ionosphere is composed of three layers designated D, E, and F, from lowest level to highest level. The F layer is further divided into two layers designated F1 (the lower layer) and F2 (the higher layer).
+
+•    The D layer ranges from about 30 to 55 miles. Ionization in the D layer is low because it is the lowest region of the ionosphere. This layer has the ability to refract signals of low frequencies. High frequencies pass right through it and are attenuated. After sunset, the D layer disappears because of the rapid recombination of ions.
+ 
+•    The E layer limits are from about 55 to 90 miles. This layer is also known as the Kennelly- Heaviside layer, because these two men were the first to propose its existence. The rate of ionic recombination in this layer is rather rapid after sunset and the layer is almost gone by midnight. This layer has the ability to refract signals as high as 20 megahertz. For this reason, it is valuable for communications in ranges up to about 1500 miles.
+
+•    The F layer exists from about 90 to 240 miles. During the daylight hours, the F layer separates into two layers, the F1 and F2 layers. The ionization level in these layers is quite high and varies widely during the day. At noon, this portion of the atmosphere is closest to the sun and the degree of ionization is maximum. Since the atmosphere is rarefied at these heights, recombination occurs slowly after sunset. Therefore, a fairly constant ionized layer is always present. The F layers are responsible for high-frequency, long distance transmission.
+
+Ground waves – two types: surface wave , space wave
+
+Surface wave - reaches the receiving site by traveling along the surface of the ground
+
+The space wave follows two distinct paths from the transmitting antenna to the receiving antenna—one through the air directly to the receiving antenna, the other reflected from the ground to the receiving antenna. The primary path of the space wave is directly from the transmitting antenna to the receiving antenna. So, the receiving antenna must be located within the radio horizon of the transmitting antenna. Because space waves are refracted slightly, even when propagated through the troposphere, the radio horizon is actually about one-third farther than the line-of-sight or natural horizon.
+The sky wave, often called the ionospheric wave, is radiated in an upward direction and returned to Earth at some distant location because of refraction from the ionosphere.
+
+SKIP DISTANCE/SKIP ZONE is the distance from the transmitter to the point where the sky wave is first returned to Earth. The size of the skip distance depends on the frequency of the wave, the angle of incidence, and the degree of ionization present.
+
+For any given time, each ionospheric layer has a maximum frequency at which radio waves can be transmitted vertically and refracted back to Earth. This frequency is known as the CRITICAL FREQUENCY
+
+An additional factor that can interfere with radio communications is the presence of ELECTROMAGNETIC INTERFERENCE (EMI). This interference can result in annoying or impossible operating conditions. Sources of EMI are both man-made and natural
+The 27-day sunspot cycle causes variations in the ionization density of the layers on a day-to-day basis. The fluctuations in the F2 layer are greater than for any other layer. For this reason, precise predictions on a day-to-day basis of the critical frequency of the F2 layer are not possible.
+
+For successful communications between any two specified locations at any given time of the day, there is a maximum useable frequency, a lowest useable frequency, and an optimum frequency (FOT) that can be used
+
+The MUF is highest around noon when ultraviolet light waves from the sun are the most intense.
+
+LUF - A wave whose frequency is too low is absorbed to such an extent that it is too weak for reception.
+
+NATURAL HORIZON is the line-of-sight horizon.
+ 
+RADIO HORIZON is one-third farther than the natural horizon.
+
+The path that a refracted wave follows to the receiver depends on the angle at which the wave strikes the ionosphere. You should remember, however, that the rf energy radiated by a transmitting antenna spreads out with distance. The energy therefore strikes the ionosphere at many different angles rather than a single angle. After the rf energy of a given frequency enters an ionospheric region, the paths that this energy might follow are many. It may reach the receiving antenna via two or more paths through a single layer. It may also, reach the receiving antenna over a path involving more than one layer, by multiple hops between the ionosphere and Earth, or by any combination of these paths.
+
+Many factors affect a radio wave in its path between the transmitting and receiving sites. The factor that has the greatest adverse effect on radio waves is ABSORPTION. Absorption results in the loss of energy of a radio wave and has a pronounced effect on both the strength of received signals and the ability to communicate over long distances.
