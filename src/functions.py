@@ -101,10 +101,10 @@ def message_update_available():
                     "\nWould you like to update now?")
     answer_input = msg_box.exec_()
 
-    if answer_input == QMessageBox.Yes:
+    if answer_input == msg_box.Yes:
         # pass
         update_app()
-    elif answer_input == QMessageBox.No:
+    elif answer_input == msg_box.No:
         pass
 
 
@@ -118,7 +118,7 @@ def update_app():
 
     central_widget = QWidget()
     msg_box = QMessageBox()
-    msg_box.setIcon(QMessageBox.Question)
+    msg_box.setIcon(QMessageBox.Information)
     msg_box.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
     msg_box.setWindowTitle("Updating")
     msg_box.setText("Updating application, please hit ok to continue..")
