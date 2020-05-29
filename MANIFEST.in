@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include requirements.txt
+include resources/ui/*.ui
+include resources/imgs/*.png
+include resources/imgs/*.ico
+include resources/backend/*.txt
+include resources/backend/*.json
