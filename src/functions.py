@@ -107,15 +107,16 @@ def message_update_available():
 
 def update_app():
     import requests
+    central_widget = QWidget()
     user = getpass.getuser()
-    url = "https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe"
-    r = requests.get(url, allow_redirects=True)
-
     working_dir = os.getcwd()
 
     os.chdir(('{}{}{}'.format('/Users/', user, '/Downloads')))
+
+    url = "https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe"
+    r = requests.get(url, allow_redirects=True)
     open('nebula_updater.exe', 'wb').write(r.content)
+
     os.chdir(working_dir)
 
-    pass
     # todo: pull updated version from github

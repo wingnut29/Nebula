@@ -63,9 +63,18 @@
         "sample answer",
         "choice d"
       ]
+    },
+    {
+      "Sample question 3?": [
+        "choice a",
+        "choice b",
+        "sample answer",
+        "choice d"
+      ]
     }
   ],
   "RF_Q_ANSWERS": [
+    "sample answer",
     "sample answer",
     "sample answer"
   ],
