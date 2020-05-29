@@ -6,6 +6,7 @@ import time
 from os import path
 from urllib.request import urlopen
 
+import requests
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QMessageBox, QWidget
 
@@ -96,26 +97,16 @@ def message_up_to_date():
     msg_box.exec_()
 
 
-def message_update_available():
-    central_widget = QWidget()
-    msg_box = QMessageBox()
-    msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-    msg_box.setIcon(QMessageBox.Question)
-    msg_box.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
-    msg_box.setWindowTitle("Update Available")
-    msg_box.setText("Update available."
-                    "\nWould you like to update now?")
-    answer_input = msg_box.exec_()
-
-    if answer_input == msg_box.Yes:
-        # pass
-        update_app()
-    elif answer_input == msg_box.No:
-        pass
+def is_file_downloaded(update_path):
+    if path.exists(update_path):
+        subprocess.Popen(update_path)
+        sys.exit()
+    else:
+        time.sleep(3)
+        is_file_downloaded(update_path)
 
 
 def update_app():
-    import requests
     user = getpass.getuser()
     download_folder = ('{}{}{}'.format('/Users/', user, '/Downloads'))
     url = "https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe"
@@ -132,13 +123,21 @@ def update_app():
 
     update_path = "{}/{}".format(download_folder, 'nebula_updater.exe')
 
-    is_file_downloaded(update_path)
+    return update_path
 
 
-def is_file_downloaded(update_path):
-    if path.exists(update_path):
-        subprocess.Popen(update_path)
-        sys.exit()
-    else:
-        time.sleep(3)
-        is_file_downloaded(update_path)
+def message_update_available():
+    central_widget = QWidget()
+    msg_box = QMessageBox()
+    msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+    msg_box.setIcon(QMessageBox.Question)
+    msg_box.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
+    msg_box.setWindowTitle("Update Available")
+    msg_box.setText("Update available."
+                    "\nWould you like to update now?")
+    answer_input = msg_box.exec_()
+
+    if answer_input == msg_box.Yes:
+        return True
+    elif answer_input == msg_box.No:
+        return False

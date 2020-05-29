@@ -9,7 +9,11 @@ def check_for_updates():
     if functions.check_app_version() == functions.check_hosted_version():
         functions.message_up_to_date()
     elif functions.check_app_version() < functions.check_hosted_version():
-        functions.message_update_available()
+        value = functions.message_update_available()
+
+        if value is not False:
+            update_path = functions.update_app()
+            functions.is_file_downloaded(update_path)
     # todo: finish checking for updates
 
 
