@@ -1,4 +1,6 @@
+import getpass
 import json
+import os
 from urllib.request import urlopen
 
 from PyQt5 import QtGui
@@ -97,11 +99,23 @@ def message_update_available():
     answer_input = msg_box.exec_()
 
     if answer_input == QMessageBox.Yes:
-        # todo: pull updated version from githubS
-        pass
-        # user = getpass.getuser()
-        # print("downloading update please wait...")
-        # url = "https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe"
-        # ('{}{}{}'.format('/Users/', user, '/Downloads')
+        # pass
+        update_app()
     elif answer_input == QMessageBox.No:
         pass
+
+
+def update_app():
+    import requests
+    user = getpass.getuser()
+    url = "https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe"
+    r = requests.get(url, allow_redirects=True)
+
+    working_dir = os.getcwd()
+
+    os.chdir(('{}{}{}'.format('/Users/', user, '/Downloads')))
+    open('nebula_updater.exe', 'wb').write(r.content)
+    os.chdir(working_dir)
+
+    pass
+    # todo: pull updated version from github

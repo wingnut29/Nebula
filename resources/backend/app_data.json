@@ -6,6 +6,28 @@
     "These modules can be found online at \"http://www.compatt.com/Tutorials/NEETS/NEETS.html\". ",
     "Good luck and may the odds be ever in your favour!"
   ],
+  "MOD_QUESTIONS": [
+    {
+      "Sample question 1?": [
+        "choice a",
+        "sample answer",
+        "choice c",
+        "choice d"
+      ]
+    },
+    {
+      "Sample question 2?": [
+        "choice a",
+        "choice b",
+        "sample answer",
+        "choice d"
+      ]
+    }
+  ],
+  "MOD_Q_ANSWERS": [
+    "sample answer",
+    "sample answer"
+  ],
   "MONEY": [
     "$0",
     "$100",
@@ -25,42 +47,6 @@
     "$500,000",
     "$1 Million"
   ],
-  "RP_QUESTIONS": [
-    {
-      "Sample question 1?": [
-        "choice a",
-        "sample answer",
-        "choice c",
-        "choice d"
-      ]
-    },
-    {
-      "Sample question 2?": [
-        "choice a",
-        "choice b",
-        "sample answer",
-        "choice d"
-      ]
-    }
-  ],
-  "MOD_QUESTIONS": [
-    {
-      "Sample question 1?": [
-        "choice a",
-        "sample answer",
-        "choice c",
-        "choice d"
-      ]
-    },
-    {
-      "Sample question 2?": [
-        "choice a",
-        "choice b",
-        "sample answer",
-        "choice d"
-      ]
-    }
-  ],
   "RF_QUESTIONS": [
     {
       "Sample question 1?": [
@@ -79,15 +65,29 @@
       ]
     }
   ],
-  "RP_Q_ANSWERS": [
-    "sample answer",
-    "sample answer"
-  ],
   "RF_Q_ANSWERS": [
     "sample answer",
     "sample answer"
   ],
-  "MOD_Q_ANSWERS": [
+  "RP_QUESTIONS": [
+    {
+      "Sample question 1?": [
+        "choice a",
+        "sample answer",
+        "choice c",
+        "choice d"
+      ]
+    },
+    {
+      "Sample question 2?": [
+        "choice a",
+        "choice b",
+        "sample answer",
+        "choice d"
+      ]
+    }
+  ],
+  "RP_Q_ANSWERS": [
     "sample answer",
     "sample answer"
   ],
