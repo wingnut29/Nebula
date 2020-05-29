@@ -31,6 +31,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.btnRadar.setVisible(False)
         self.btnWave.setVisible(False)
 
+        self.lblVersionNum.setText(functions.get_version_number())
+
     def start_timers(self):
         clock = QTimer(self)
         clock.timeout.connect(self.get_time)

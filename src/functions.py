@@ -12,6 +12,12 @@ from PyQt5.QtWidgets import QMessageBox, QWidget
 from src import resources
 
 
+def get_version_number():
+    with open('resources/backend/version.txt', 'rt') as ver:
+        version = ver.read()
+    return version
+
+
 def reset_json():
     central_widget = QWidget()
     try:
