@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Nebula"
-#define MyAppVersion "0.0.5"
+#define MyAppVersion "0.0.8"
 #define MyAppPublisher "Justin Mullins"
 #define MyAppURL "https://github.com/wingnut29/Nebula"
 #define MyAppExeName "nebula.exe"
