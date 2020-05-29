@@ -14,3 +14,5 @@ EARTH = "resources/imgs/earth.png"
 
 # Data Files
 DATA = "resources/backend/app_data.json"
+WAVE_TEXT = "resources/backend/wave_propagation.txt"
+VERSION = "resources/backend/version.txt"

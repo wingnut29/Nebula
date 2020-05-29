@@ -1,5 +1,3 @@
-import json
-
 from PyQt5 import QtWidgets, QtGui, uic
 from PyQt5.QtCore import QTime, QTimer
 from PyQt5.QtGui import QPixmap
@@ -19,7 +17,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setup_ui(topic)
         self.show()
 
-        data = self.load_json()
+        data = functions.load_json()
 
         self.btnStart.clicked.connect(lambda: self.start(data))
         # self.btnNext.clicked.connect(lambda: self.next_question(data))
@@ -74,21 +72,6 @@ class MainWindow(QtWidgets.QMainWindow):
     def get_time(self):
         time = QTime.currentTime().toString("hh:mm")
         self.lcdTime.display(time)
-
-    def load_json(self):
-        try:
-            with open(resources.DATA, 'rt') as f_in:
-                data = json.load(f_in)
-            return data
-        except Exception as e:
-            QMessageBox.warning(self, "Error", "Cannot load backend. {}".format(e))
-
-    def save_json(self, data=None):
-        try:
-            with open(resources.DATA, 'w') as json_file:
-                json.dump(data, json_file, indent=4, sort_keys=True)
-        except Exception as e:
-            QMessageBox.warning(self, "Error", "Cannot load backend. {}".format(e))
 
     def start(self, data=None):
         self.frame_menu.move(230, 140)
@@ -180,7 +163,7 @@ class MainWindow(QtWidgets.QMainWindow):
             count += 1
             data["COUNTER"] = count
             data["SCORE"] += 1
-            self.save_json(data)
+            functions.save_json(data)
             self.next_question(data)
 
         elif button.text() != data["Q_ANSWERS"][count]:
