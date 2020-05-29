@@ -1,6 +1,5 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.3'
 packages = ['src']
 
 with open("README.md") as readme:
@@ -9,8 +8,11 @@ with open("README.md") as readme:
 with open("requirements.txt") as requirements:
     install_requires = [line.strip() for line in requirements]
 
-with open('resources/backend/version.txt', 'w') as ver:
-    ver.write(VERSION)
+with open('resources/backend/version.txt', 'rt') as ver:
+    VERSION = ver.read()
+
+# with open('resources/backend/version.txt', 'w') as ver:
+#     ver.write(VERSION)
 
 setup(
     name='nebula',

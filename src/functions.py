@@ -1,5 +1,7 @@
 import json
+from urllib.request import urlopen
 
+from PyQt5 import QtGui
 from PyQt5.QtWidgets import QMessageBox, QWidget
 
 from src import resources
@@ -54,9 +56,48 @@ def check_app_version():
 
 
 def check_hosted_version():
-    with open("https://github.com/wingnut29/Nebula/blob/master/resources/backend/version.txt", 'rt') as in_file:
-        version = in_file.read()
-        for char in version:
-            if char in ".":
-                web_version = version.replace(char, "")
-    return web_version
+    try:
+        with urlopen(
+                "https://raw.githubusercontent.com/wingnut29/Nebula/master/resources/backend/version.txt") as web_file:
+            version = (web_file.read()).decode()
+            for char in version:
+                if char in ".":
+                    web_version = version.replace(char, "")
+        return web_version
+    except Exception:
+        central_widget = QWidget()
+        msg_box = QMessageBox()
+        msg_box.setIcon(QMessageBox.Information)
+        msg_box.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
+        msg_box.setWindowTitle("Connection error")
+        msg_box.setText("Cannot connect to the internet to check for updates."
+                        "\nTo check for updates please check your connection.")
+        msg_box.exec_()
+
+
+def message_up_to_date():
+    central_widget = QWidget()
+    msg_box = QMessageBox()
+    msg_box.setIcon(QMessageBox.Information)
+    msg_box.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
+    msg_box.setWindowTitle("Up to Date")
+    msg_box.setText("This is the most up to date version.")
+    msg_box.exec_()
+
+
+def message_update_available():
+    central_widget = QWidget()
+    msg_box = QMessageBox()
+    msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+    msg_box.setIcon(QMessageBox.Question)
+    msg_box.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
+    msg_box.setWindowTitle("Update Available")
+    msg_box.setText("Update available."
+                    "\nWould you like to update now?")
+    answer_input = msg_box.exec_()
+
+    if answer_input == QMessageBox.Yes:
+        pass
+        # todo: do update
+    elif answer_input == QMessageBox.No:
+        pass

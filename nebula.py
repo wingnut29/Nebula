@@ -6,16 +6,17 @@ from src import functions, main
 
 
 def check_for_updates():
-    pass
+    if functions.check_app_version() == functions.check_hosted_version():
+        functions.message_up_to_date()
+    elif functions.check_app_version() < functions.check_hosted_version():
+        functions.message_update_available()
     # todo: finish checking for updates
 
 
 def start():
-    print(functions.check_app_version())
-    print(functions.check_hosted_version())
     app = QtWidgets.QApplication(sys.argv)
     window = main.MainWindow()
-    # check_for_updates()
+    check_for_updates()
     app.exec_()
     functions.reset_json()
 

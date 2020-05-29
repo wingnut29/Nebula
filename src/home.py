@@ -1,3 +1,5 @@
+import sys
+
 from PyQt5 import QtWidgets, QtGui, uic
 from PyQt5.QtCore import QTime, QTimer
 from PyQt5.QtGui import QPixmap
@@ -19,13 +21,13 @@ class MainWindow(QtWidgets.QMainWindow):
 
         data = functions.load_json()
 
-        self.btnStart.clicked.connect(lambda: self.start(data))
+        self.btnStart.clicked.connect(lambda: self.start(data, topic))
         # self.btnNext.clicked.connect(lambda: self.next_question(data))
         self.btnBack.clicked.connect(lambda: self.switch_window(main))
-        self.btnChoiceA.clicked.connect(lambda: self.check_answer(data, self.btnChoiceA))
-        self.btnChoiceB.clicked.connect(lambda: self.check_answer(data, self.btnChoiceB))
-        self.btnChoiceC.clicked.connect(lambda: self.check_answer(data, self.btnChoiceC))
-        self.btnChoiceD.clicked.connect(lambda: self.check_answer(data, self.btnChoiceD))
+        self.btnChoiceA.clicked.connect(lambda: self.check_answer(data, self.btnChoiceA, topic))
+        self.btnChoiceB.clicked.connect(lambda: self.check_answer(data, self.btnChoiceB, topic))
+        self.btnChoiceC.clicked.connect(lambda: self.check_answer(data, self.btnChoiceC, topic))
+        self.btnChoiceD.clicked.connect(lambda: self.check_answer(data, self.btnChoiceD, topic))
 
     def setup_ui(self, topic):
         self.lblSubHeader.setText(topic)
@@ -73,7 +75,7 @@ class MainWindow(QtWidgets.QMainWindow):
         time = QTime.currentTime().toString("hh:mm")
         self.lcdTime.display(time)
 
-    def start(self, data=None):
+    def start(self, data=None, topic=None):
         self.frame_menu.move(230, 140)
         self.frame_menu.setVisible(True)
         self.lbl100.setVisible(True)
@@ -104,18 +106,30 @@ class MainWindow(QtWidgets.QMainWindow):
         self.btnChoiceC.setVisible(True)
         self.btnChoiceD.setVisible(True)
 
-        self.next_question(data)
+        self.next_question(data, topic)
 
-    def next_question(self, data=None):
+    def next_question(self, data=None, topic=None):
         count = data["COUNTER"]
 
-        if count < len(data["QUESTIONS"]):
-            for question in data["QUESTIONS"][count].keys():
+        if topic == "Wave Propagation":
+            question_data = data["WP_QUESTIONS"]
+        elif topic == "Radar Principles":
+            question_data = data["RP_QUESTIONS"]
+        elif topic == "Modulation":
+            pass
+        elif topic == "Radio-Frequency Communication Principles":
+            pass
+        else:
+            QMessageBox.information(self, "Error", "No question bank loaded")
+            sys.exit()
+
+        if count < len(question_data):
+            for question in question_data[count].keys():
                 txt_question = question
 
             self.txtInput.setText(txt_question)
 
-            for choices in data["QUESTIONS"][count].values():
+            for choices in question_data[count].values():
                 list_choices = choices
 
             self.btnChoiceA.setText(list_choices[0])
@@ -123,8 +137,8 @@ class MainWindow(QtWidgets.QMainWindow):
             self.btnChoiceC.setText(list_choices[2])
             self.btnChoiceD.setText(list_choices[3])
 
-        elif count >= len(data["QUESTIONS"]):
-            if data["SCORE"] == len(data["QUESTIONS"]):
+        elif count >= len(question_data):
+            if data["SCORE"] == len(question_data):
                 self.frame_menu.setVisible(False)
                 msgBox = QMessageBox()
                 msgBox.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
@@ -147,13 +161,23 @@ class MainWindow(QtWidgets.QMainWindow):
                 msgBox.exec_()
                 self.close()
 
-    def check_answer(self, data, button):
+    def check_answer(self, data, button, topic):
+
+        if topic == "Wave Propagation":
+            answer_data = data["WP_Q_ANSWERS"]
+        elif topic == "Radar Principles":
+            answer_data = data["RP_Q_ANSWERS"]
+        elif topic == "Modulation":
+            pass
+        elif topic == "Radio-Frequency Communication Principles":
+            pass
+
         msgBox = QMessageBox()
         msgBox.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
         count = data["COUNTER"]
         money_label = self.check_money(data)
 
-        if button.text() == data["Q_ANSWERS"][count]:
+        if button.text() == answer_data[count]:
             msgBox.setWindowTitle("Correct")
             msgBox.setText("{}: Answer- '{}'".format("Correct!", button.text()))
             msgBox.exec_()
@@ -164,9 +188,9 @@ class MainWindow(QtWidgets.QMainWindow):
             data["COUNTER"] = count
             data["SCORE"] += 1
             functions.save_json(data)
-            self.next_question(data)
+            self.next_question(data, topic)
 
-        elif button.text() != data["Q_ANSWERS"][count]:
+        elif button.text() != answer_data[count]:
             money_label.setStyleSheet("QLabel{background-color: rgb(255, 0, 0);"
                                       "border-radius:10px;"
                                       "border: 2px solid #000000;}")
