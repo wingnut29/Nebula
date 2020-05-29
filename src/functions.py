@@ -1,6 +1,9 @@
 import getpass
 import json
-import os
+import subprocess
+import sys
+import time
+from os import path
 from urllib.request import urlopen
 
 from PyQt5 import QtGui
@@ -107,16 +110,29 @@ def message_update_available():
 
 def update_app():
     import requests
-    central_widget = QWidget()
     user = getpass.getuser()
-    working_dir = os.getcwd()
-
-    os.chdir(('{}{}{}'.format('/Users/', user, '/Downloads')))
-
+    download_folder = ('{}{}{}'.format('/Users/', user, '/Downloads'))
     url = "https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe"
     r = requests.get(url, allow_redirects=True)
-    open('nebula_updater.exe', 'wb').write(r.content)
+    open("{}/{}".format(download_folder, 'nebula_updater.exe'), 'wb').write(r.content)
 
-    os.chdir(working_dir)
+    central_widget = QWidget()
+    msg_box = QMessageBox()
+    msg_box.setIcon(QMessageBox.Question)
+    msg_box.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))
+    msg_box.setWindowTitle("Updating")
+    msg_box.setText("Updating application, please hit ok to continue..")
+    msg_box.exec_()
 
-    # todo: pull updated version from github
+    update_path = "{}/{}".format(download_folder, 'nebula_updater.exe')
+
+    is_file_downloaded(update_path)
+
+
+def is_file_downloaded(update_path):
+    if path.exists(update_path):
+        subprocess.Popen(update_path)
+        sys.exit()
+    else:
+        time.sleep(3)
+        is_file_downloaded(update_path)
