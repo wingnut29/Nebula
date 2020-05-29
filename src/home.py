@@ -116,9 +116,9 @@ class MainWindow(QtWidgets.QMainWindow):
         elif topic == "Radar Principles":
             question_data = data["RP_QUESTIONS"]
         elif topic == "Modulation":
-            pass
+            question_data = data["MOD_QUESTIONS"]
         elif topic == "Radio-Frequency Communication Principles":
-            pass
+            question_data = data["RF_QUESTIONS"]
         else:
             QMessageBox.information(self, "Error", "No question bank loaded")
             sys.exit()
@@ -168,9 +168,9 @@ class MainWindow(QtWidgets.QMainWindow):
         elif topic == "Radar Principles":
             answer_data = data["RP_Q_ANSWERS"]
         elif topic == "Modulation":
-            pass
+            answer_data = data["MOD_Q_ANSWERS"]
         elif topic == "Radio-Frequency Communication Principles":
-            pass
+            answer_data = data["RF_Q_ANSWERS"]
 
         msgBox = QMessageBox()
         msgBox.setWindowIcon(QtGui.QIcon(resources.WINDOW_ICON))

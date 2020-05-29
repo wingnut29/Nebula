@@ -27,24 +27,68 @@
   ],
   "RP_QUESTIONS": [
     {
-      "What is PROPAGATION?": [
-        "movement through a medium",
-        "length of a wave",
-        "the rate at which a wave travels",
-        "speed at which a wave moves"
+      "Sample question 1?": [
+        "choice a",
+        "sample answer",
+        "choice c",
+        "choice d"
       ]
     },
     {
-      "Sample question?": [
+      "Sample question 2?": [
         "choice a",
         "choice b",
+        "sample answer",
+        "choice d"
+      ]
+    }
+  ],
+  "MOD_QUESTIONS": [
+    {
+      "Sample question 1?": [
+        "choice a",
+        "sample answer",
         "choice c",
+        "choice d"
+      ]
+    },
+    {
+      "Sample question 2?": [
+        "choice a",
+        "choice b",
+        "sample answer",
+        "choice d"
+      ]
+    }
+  ],
+  "RF_QUESTIONS": [
+    {
+      "Sample question 1?": [
+        "choice a",
+        "sample answer",
+        "choice c",
+        "choice d"
+      ]
+    },
+    {
+      "Sample question 2?": [
+        "choice a",
+        "choice b",
+        "sample answer",
         "choice d"
       ]
     }
   ],
   "RP_Q_ANSWERS": [
-    "movement through a medium",
+    "sample answer",
+    "sample answer"
+  ],
+  "RF_Q_ANSWERS": [
+    "sample answer",
+    "sample answer"
+  ],
+  "MOD_Q_ANSWERS": [
+    "sample answer",
     "sample answer"
   ],
   "SCORE": 0,

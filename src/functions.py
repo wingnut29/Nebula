@@ -97,7 +97,11 @@ def message_update_available():
     answer_input = msg_box.exec_()
 
     if answer_input == QMessageBox.Yes:
+        # todo: pull updated version from githubS
         pass
-        # todo: pull updated version from github
+        # user = getpass.getuser()
+        # print("downloading update please wait...")
+        # url = "https://github.com/wingnut29/Nebula/raw/master/setup/nebula_setup.exe"
+        # ('{}{}{}'.format('/Users/', user, '/Downloads')
     elif answer_input == QMessageBox.No:
         pass
