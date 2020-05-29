@@ -98,6 +98,6 @@ def message_update_available():
 
     if answer_input == QMessageBox.Yes:
         pass
-        # todo: do update
+        # todo: pull updated version from github
     elif answer_input == QMessageBox.No:
         pass

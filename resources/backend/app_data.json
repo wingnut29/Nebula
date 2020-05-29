@@ -33,10 +33,19 @@
         "the rate at which a wave travels",
         "speed at which a wave moves"
       ]
+    },
+    {
+      "Sample question?": [
+        "choice a",
+        "choice b",
+        "choice c",
+        "choice d"
+      ]
     }
   ],
   "RP_Q_ANSWERS": [
-    "movement through a medium"
+    "movement through a medium",
+    "sample answer"
   ],
   "SCORE": 0,
   "STUDY": [
