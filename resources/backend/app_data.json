@@ -25,7 +25,24 @@
     "$500,000",
     "$1 Million"
   ],
-  "QUESTIONS": [
+  "RP_QUESTIONS": [
+    {
+      "What is PROPAGATION?": [
+        "movement through a medium",
+        "length of a wave",
+        "the rate at which a wave travels",
+        "speed at which a wave moves"
+      ]
+    }
+  ],
+  "RP_Q_ANSWERS": [
+    "movement through a medium"
+  ],
+  "SCORE": 0,
+  "STUDY": [
+    "Material"
+  ],
+  "WP_QUESTIONS": [
     {
       "What is PROPAGATION?": [
         "movement through a medium",
@@ -155,7 +172,7 @@
       ]
     }
   ],
-  "Q_ANSWERS": [
+  "WP_Q_ANSWERS": [
     "movement through a medium",
     "Longitudinal waves",
     "Super High Frequency",
@@ -172,9 +189,5 @@
     "angle",
     "F",
     "absorption"
-  ],
-  "SCORE": 0,
-  "STUDY": [
-    "Material"
   ]
 }
