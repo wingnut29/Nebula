@@ -129,11 +129,11 @@
       ]
     },
     {
-      "Extremely low-frequency transmissions are primarily directed at which of the following users?": [
-        "Shore installations",
-        "Surface ships",
-        "Submarines",
-        "Aircraft"
+      "A method of operation in which telecommunications between stations takes place simultaneously in both directions using two separate frequencies.": [
+        "Half-duplex",
+        "Semi-duplex ",
+        "Full-duplex",
+        "Broadcast"
       ]
     },
     {
@@ -188,7 +188,7 @@
     "Point-to-point",
     "Facsimile",
     "Tropospheric scatter",
-    "Submarines",
+    "Full-duplex",
     "NORATS",
     "Frequency-diversity",
     "A keyer",
