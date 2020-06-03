@@ -49,34 +49,151 @@
   ],
   "RF_QUESTIONS": [
     {
-      "Sample question 1?": [
-        "choice a",
-        "sample answer",
-        "choice c",
-        "choice d"
+      "Any transmission, emission, or reception of signs, signals, writings, images, or sounds.": [
+        "Telecommunications",
+        "Broadcast",
+        "Calibration",
+        "Telemetry "
       ]
     },
     {
-      "Sample question 2?": [
-        "choice a",
-        "choice b",
-        "sample answer",
-        "choice d"
+      "What are the two types of electrical communications?": [
+        "Radio and wire",
+        "Television and wire",
+        "Telegraph and radio",
+        "Television and radio"
       ]
     },
     {
-      "Sample question 3?": [
-        "choice a",
-        "choice b",
-        "sample answer",
-        "choice d"
+      "RTTY stand for what?": [
+        "radio techtypewriter",
+        "radar teletypewriter",
+        "radio teletypewriter",
+        "radar telemetry and targeting"
+      ]
+    },
+    {
+      "Radiotelegraph transmissions are referred to as continuous wave (cw) telegraphy. CW is valuable when communicating to, from, and among widely separated naval units. What is the main advantage of the CW mode?": [
+        "Cost",
+        "Speed",
+        "Security",
+        "Reliability"
+      ]
+    },
+    {
+      "Tactical communications is usually considered as line-of-sight. What maximum distance is normally within the line-of-sight range?": [
+        "5 miles",
+        "25 miles",
+        "50 miles",
+        "250 miles"
+      ]
+    },
+    {
+      "Navy use of the low-frequency band is mainly for which, if any, of the following broadcasts?": [
+        "Ship to shore",
+        "Fleet multichannel",
+        "Space vehicle telemetry",
+        "None of the above"
+      ]
+    },
+    {
+      "VLF transmitters are used primarily for which of the following purposes?": [
+        "Navigation and fleet communications",
+        "Frequency standards and time signals",
+        "Astronomy and oscillator calibration",
+        "Aircraft control and space vehicle tracking"
+      ]
+    },
+    {
+      "HF communications over long-distance trunks, or links between fixed terminals are examples of which of the following types of systems?": [
+        "Fleet broadcast",
+        "Point-to-point",
+        "Ground-to-air",
+        "Ship-to-shore"
+      ]
+    },
+    {
+      "The method for transmitting and receiving still images. These images can be maps, photographs, and handwritten or printed text.": [
+        "Facsimile",
+        "Fading",
+        "Framing",
+        "Frequency Synthesizer"
+      ]
+    },
+    {
+      "Normally the transmission range of VHF is limited to line of sight. What technique is used to increase this range?": [
+        "Tropospheric scatter",
+        "Atmospheric diversity",
+        "Ionospheric maneuvering",
+        "Each of the above"
+      ]
+    },
+    {
+      "Extremely low-frequency transmissions are primarily directed at which of the following users?": [
+        "Shore installations",
+        "Surface ships",
+        "Submarines",
+        "Aircraft"
+      ]
+    },
+    {
+      "Which of the following switched networks extends tactical voice to shore based operational commands?": [
+        "NORATS",
+        "AUTOVON",
+        "AUTODIN",
+        "AUTOSEVOCOM"
+      ]
+    },
+    {
+      "Sending a message on several frequencies at once is an example of which of the following transmission types?": [
+        "Time-diversity",
+        "Phase-diversity",
+        "Distance-diversity",
+        "Frequency-diversity"
+      ]
+    },
+    {
+      "A CW transmitter must contain which of the following components?": [
+        "A traveling-wave tube",
+        "A demodulator",
+        "A combiner",
+        "A keyer"
+      ]
+    },
+    {
+      "The process of heterodyning takes place in which of the following receiver circuits?": [
+        "Mixer",
+        "Comparator",
+        "Oscillator",
+        "Second IF amplifier"
+      ]
+    },
+    {
+      "Two or more circuits within a receiver are varied by a single control, through which of the following processes?": [
+        "Frequency synthesis",
+        "Automatic gain control",
+        "Automatic frequency control",
+        "Ganged tuning"
       ]
     }
   ],
   "RF_Q_ANSWERS": [
-    "sample answer",
-    "sample answer",
-    "sample answer"
+    "Telecommunications",
+    "Radio and wire",
+    "radio teletypewriter",
+    "Reliability",
+    "25 miles",
+    "Fleet multichannel",
+    "Navigation and fleet communications",
+    "Point-to-point",
+    "Facsimile",
+    "Tropospheric scatter",
+    "Submarines",
+    "NORATS",
+    "Frequency-diversity",
+    "A keyer",
+    "Mixer",
+    "Ganged tuning"
   ],
   "RP_QUESTIONS": [
     {

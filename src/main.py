@@ -58,10 +58,12 @@ class MainWindow(QtWidgets.QMainWindow):
         self.btnRadar.clicked.connect(lambda: self.switch_window(home, "Radar Principles"))
 
         self.btnMod.setVisible(True)
-        # self.btnMod.clicked.connect(lambda: self.switch_window(home, "Modulation"))
+        self.btnMod.setEnabled(True)
+        self.btnMod.clicked.connect(lambda: self.switch_window(home, "Modulation"))
 
         self.btnRF.setVisible(True)
-        # self.btnRF.clicked.connect(lambda: self.switch_window(home, "Radio-Frequency Communication Principles"))
+        self.btnRF.setEnabled(True)
+        self.btnRF.clicked.connect(lambda: self.switch_window(home, "Radio-Frequency Communication Principles"))
 
     def switch_window(self, ui, topic=None):
         self.window = ui.MainWindow(topic)
